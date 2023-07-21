@@ -1,0 +1,3 @@
+In this terraform script, We'll learn about the bastion host and serving a static website from private s3 bucket. here at first I Created a bastion host, and the private s3 bucket for storing the content of static site, and then Created a CDN(content delivery network) using aws cloudfront.
+        but as another security layer, i use a rule that, if you want to add or delete anything from the s3 bucket, you have to access the bucket through the instance which is in private bucket. so that i created a IAM role and policy.
+        terraform modules is a tool where we use variables, and we have to edit only in the main file...
